@@ -1,3 +1,63 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddcece;
+}
+
 h1 {
-  color: blue;
+  color: #f45353;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+li {
+  list-style: none;
+  color: #938585;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  color: #f45353;
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.github {
+  color: #938585;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: #f45353;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 10px;
+  top: -70px;
+  left: 72px;
 }
