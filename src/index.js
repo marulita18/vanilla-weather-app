@@ -12,6 +12,7 @@ let day = days[date.getDay()];
 
 return `${day} ${hours}:${minutes}`;
 }
+}
 
 
 function showTemperature(response) {
