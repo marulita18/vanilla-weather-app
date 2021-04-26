@@ -36,9 +36,9 @@
           </div>
         </form>
         <div class="overview">
-          <h1 id="city">Amsterdam</h1>
+          <h1 id="city"></h1>
           <ul>
-            <li id="date">Saturday 13:00</li>
+            <li>Last updated: <span id="date"></span></li>
             <li id="description">Partly cloudy</li>
           </ul>
           <div class="row">
@@ -53,7 +53,10 @@
                 <div class="float-left" id="temperature">
                   <strong> 13</strong>
                 </div>
-                <span class="units">° C | °F</span>
+                <span class="units"
+                  ><a href="#" id="celsius-link">° C </a>|
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
             </div>
             <div class="col-6">

@@ -55,6 +55,7 @@ ul {
   font-size: 10px;
   top: -70px;
   left: 72px;
+  text-decoration: none;
 }
 
 #temperature {
