@@ -1,10 +1,10 @@
 function formatDate(timestamp) {
 let date = new Date(timestamp);
 let hours = date.getHours();
-if (hours > 10) {
+if (hours < 10) {
     hours = `0${hours}`;
 let minutes = date.getMinutes();
-if (minutes > 10) {
+if (minutes < 10) {
     minutes = `0${minutes}`;
 }
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -31,8 +31,22 @@ function showTemperature(response) {
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
-let apiKey = "86ff6a12271021159e9ad7af69c800ff";
-let units = "metric";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apiKey}&units=${units}`;
+function search(city) {
+    let apiKey = "86ff6a12271021159e9ad7af69c800ff";
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    
+    axios.get(apiUrl).then(showTemperature);
+}
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
 
-axios.get(apiUrl).then(showTemperature);
+search("Amsterdam");
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
