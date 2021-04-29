@@ -43,8 +43,8 @@ function displayForecast (response){
           id="weather-forecast-icon"
           /> 
           <div class="weather-forecast-temperatures"> 
-            <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)}11°</span>
-            <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)}14°</span> 
+            <span class="weather-forecast-temperature-min"> ${Math.round(forecastDay.temp.min)}</span>
+            <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)}</span> 
         </div>
         </div>
         `;
@@ -118,7 +118,7 @@ temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
 let celsiusTemperature = null;
 search("Amsterdam");
-displayForecast();
+
 
 
 let form = document.querySelector("#search-form");
