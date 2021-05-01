@@ -9,9 +9,10 @@ body {
 }
 
 h1 {
-  color: #f45353;
+  color: #162bc9;
   font-size: 24px;
   font-weight: 100;
+  padding-top: 10px;
 }
 
 li {
@@ -26,9 +27,8 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-.col {
-  color: #f45353;
+<!--.col {
+  color: #162bc9;
   font-size: 16px;
   padding-top: 10px;
   text-align: center;
