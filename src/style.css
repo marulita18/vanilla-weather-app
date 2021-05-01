@@ -3,7 +3,7 @@ body {
 }
 .weather-app {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 60px auto;
   padding: 20px;
   border: 1px solid #ddcece;
 }
@@ -27,12 +27,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-<!--.col {
-  color: #162bc9;
-  font-size: 16px;
-  padding-top: 10px;
-  text-align: center;
-}
 
 .github {
   color: #938585;
@@ -40,6 +34,13 @@ ul {
   margin: 0 auto;
 }
 
+.github a {
+  text-decoration: none;
+}
+
+.github a:hover {
+  text-decoration: underline;
+}
 .overview {
   margin-bottom: 20px;
 }
@@ -48,20 +49,22 @@ ul {
   margin-right: 10px;
   height: 64px;
   width: 64px;
+  position: relative;
+  top: -34px;
+}
+
+#temperature {
+  color: #162bc9;
+  font-size: 64px;
+  font-weight: 400;
 }
 
 .weather-temperature .units {
   position: relative;
-  font-size: 10px;
-  top: -70px;
-  left: 72px;
+  line-height: 1;
+  top: -34px;
+  font-size: 14px;
   text-decoration: none;
-}
-
-#temperature {
-  color: #f45353;
-  font-size: 64px;
-  font-weight: 400;
 }
 
 .weather-forecast {
